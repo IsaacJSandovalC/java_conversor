@@ -4,20 +4,24 @@ public class ConversorMoneda {
         while (true) {
             try {
                 String[] opciones = {"Conversion de dolar a euro", "Conversion de dolar a pesos mexicanos", "Conversion de dolar a libra esterlina", "Conversion de dolar a soles"};
-                String opcionSeleccionada = (String) JOptionPane.showInputDialog(null, "Selecciona una opción", "Menú", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
+                String opcion_seleccionada = (String) JOptionPane.showInputDialog(null, "Selecciona una opción", "Menú", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
 
-                switch (opcionSeleccionada) {
+                switch (opcion_seleccionada) {
                     case "Conversion de dolar a euro":
-                        realizarConversion("euro", 0.94);
+                        double euro = 0.94;
+                        realizar_conversion("euro", euro);
                         break;
                     case "Conversion de dolar a pesos mexicanos":
-                        realizarConversion("pesos mexicanos", 18.36);
+                        double pesos_mexicano = 18.36;
+                        realizar_conversion("pesos mexicanos", pesos_mexicano);
                         break;
                     case "Conversion de dolar a libra esterlina":
-                        realizarConversion("libras esterlinas", 0.83);
+                        double libra_esterlina = 0.83;
+                        realizar_conversion("libras esterlinas", libra_esterlina);
                         break;
                     case "Conversion de dolar a soles":
-                        realizarConversion("soles", 3.83);
+                        double soles = 3.83
+                        realizar_conversion("soles", soles);
                         break;
                     default:
                         // Acción por defecto si no se selecciona ninguna opción válida
@@ -30,9 +34,9 @@ public class ConversorMoneda {
         }
     }
 
-    public static void realizarConversion(String monedaObjetivo, double tasaDeCambio) {
+    public static void realizar_conversion(String monedaObjetivo, double tasaDeCambio) {
         try {
-            String valor1 = solicitarEntrada("Introduce el valor en dolares");
+            String valor1 = solicitar_entrada("Introduce el valor en dolares");
             double dolares = Double.parseDouble(valor1);
             double conversion = dolares * tasaDeCambio;
             JOptionPane.showMessageDialog(null, "El valor en " + monedaObjetivo + " es de: " + conversion);
@@ -50,7 +54,7 @@ public class ConversorMoneda {
         }
     }
 
-    public static String solicitarEntrada(String mensaje) {
+    public static String solicitar_entrada(String mensaje) {
         while (true) {
             try {
                 return JOptionPane.showInputDialog(mensaje);
