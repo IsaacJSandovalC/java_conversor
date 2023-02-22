@@ -11,16 +11,20 @@ public class main_menu extends conversor {
 
                 switch (opcionSeleccionada) {
                     case "Conversion de dolar a euro":
-                        realizarConversion("euro", 0.94);
+                        double euro = 0.94;
+                        realizarConversion("euro", euro);
                         break;
                     case "Conversion de dolar a pesos mexicanos":
-                        realizarConversion("pesos mexicanos", 18.36);
+                        double peso = 18.36;
+                        realizarConversion("pesos mexicanos", peso);
                         break;
                     case "Conversion de dolar a libra esterlina":
-                        realizarConversion("libras esterlinas", 0.83);
+                        double libra = 0.83;
+                        realizarConversion("libras esterlinas", libra);
                         break;
                     case "Conversion de dolar a soles":
-                        realizarConversion("soles", 3.83);
+                        double soles = 3.45;
+                        realizarConversion("soles", soles);
                         break;
                     default:
                         // Acción por defecto si no se selecciona ninguna opción válida
