@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class entrada {
+public class input {
 
     public static String solicitarEntrada(String mensaje) {
         while (true) {
