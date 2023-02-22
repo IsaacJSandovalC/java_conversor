@@ -8,7 +8,7 @@ En esta oportunidad, a los Devs se nos solicitó crear un conversor de divisas u
 * Utilizar la clase JOptionPane de la biblioteca Javax
 
 # Funcionalidades:
-El proyecto es sencillo, se trata de general la funcionalidad de convertir de dolares a cualquier moneda enlistada, las monedas que tenemos disponibles son las siguientes:
+El proyecto es sencillo, se trata de general la funcionalidad de convertir de dolares a cualquier moneda enlistada, las monedas que hay enlistadas son las siguientes:
 * Libra esterlina 
 * Euro
 * Peso mexicano
