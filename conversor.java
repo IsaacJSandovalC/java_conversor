@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class conversor extends entrada {
+public class conversor extends input {
     public static void realizarConversion(String monedaObjetivo, double tasaDeCambio) {
         try {
             String valor1 = solicitarEntrada("Introduce el valor en dolares");
